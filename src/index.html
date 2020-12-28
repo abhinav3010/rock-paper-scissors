@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div class="header-box">
+      <div class="game">
+        <div>ROCK</div>
+        <div>PAPER</div>
+        <div>SCISSORS</div>
+      </div>
+      <div class="score-box">
+        <div>SCORE</div>
+        <div class="score">0</div>
+      </div>
+    </div>
+    <div class="playground">
+      <div class="chip blue-ring choice" id="0">
+        <img src="./images/icon-paper.svg" alt="Paper" class="medium" />
+      </div>
+      <div class="chip yellow-ring choice" id="1">
+        <img src="./images/icon-scissors.svg" alt="Scissors" class="medium" />
+      </div>
+      <div class="chip pink-ring choice center-horizontally" id="2">
+        <img src="./images/icon-rock.svg" alt="rock" class="medium" />
+      </div>
+    </div>
+    <div class="rules">RULES</div>
+    <div class="modal-container">
+      <div class="modal">
+        <div class="header">
+          <div class="heading-text">RULES</div>
+          <img src="./images/icon-close.svg" alt="close" class="close-icon" />
+        </div>
+        <div class="rules-img">
+          <img src="./images/image-rules.svg" alt="rules" />
+        </div>
+      </div>
+    </div>
+    <div class="selection-screen">
+      <div class="selection">
+        <div>YOU PICKED</div>
+        <div class="selected player">
+          <div class="chip blue-ring picked">
+            <img src="./images/icon-paper.svg" alt="Paper" class="large" />
+          </div>
+        </div>
+      </div>
+      <div class="result">
+        <div class="result-text">YOU WIN</div>
+        <div class="play-again-btn">PLAY AGAIN</div>
+      </div>
+      <div class="selection">
+        <div>HOUSE PICKED</div>
+        <div class="selected house">
+          <div class="loading-bot">
+            <div class="loader"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js" type="text/javascript"></script>
+  </body>
+</html>

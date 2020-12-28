@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  background-repeat: no-repeat;
+  font-family: "Barlow Semi Condensed";
+  cursor: default;
+  overflow: hidden;
+}
+
+.header-box {
+  border: 2px solid hsl(217, 16%, 45%);
+  border-radius: 15px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  font-weight: 700;
+}
+
+.game {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  line-height: 80%;
+}
+
+.score-box {
+  background-color: white;
+  color: hsl(229, 64%, 46%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px 40px 5px 40px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.score {
+  font-size: 50px;
+  font-weight: 700;
+  color: hsl(229, 25%, 31%);
+}
+
+.playground {
+  position: absolute;
+  height: 480px;
+  width: 480px;
+  top: 67%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: url("../images/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.chip {
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.choice {
+  height: 200px;
+  width: 200px;
+}
+
+.choice:hover {
+  transform: scale(1.09);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.medium {
+  height: 80px;
+  width: 60px;
+}
+
+.blue-ring {
+  border: 25px solid #4862f7;
+  box-shadow: 0px 7px 3px #2344a6, inset 5px 7px 5px #9ea5ba;
+}
+.yellow-ring {
+  border: 25px solid #ffbd2b;
+  box-shadow: 0px 7px 3px #c78a04, inset 5px 7px 5px #9ea5ba;
+}
+.pink-ring {
+  border: 25px solid #fa3754;
+  box-shadow: 0px 7px 3px #ba1a32, inset 5px 7px 5px #9ea5ba;
+}
+
+.center-horizontally {
+  margin: auto;
+}
+
+.rules {
+  background: none;
+  color: white;
+  border: 2px solid white;
+  display: inline-block;
+  border-radius: 6px;
+  padding: 10px 35px 10px 35px;
+  font-size: 14px;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+.rules:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #07004f;
+}
+
+.modal-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 0, 0, 0.5);
+  z-index: 1001;
+  display: none;
+}
+
+.modal {
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.heading-text {
+  font-size: 30px;
+  font-weight: 600;
+  color: #07004f;
+}
+.rules-img {
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+}
+.close-icon {
+  padding: 10px;
+}
+.close-icon:hover {
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.selection-screen {
+  margin-top: 100px;
+  display: none;
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  justify-content: center;
+}
+.selection {
+  height: 500px;
+  width: 400px;
+  text-align: center;
+}
+
+.selected {
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.picked {
+  height: 250px;
+  width: 250px;
+}
+
+.large {
+  height: 100px;
+  width: 80px;
+}
+
+@keyframes expand {
+  from {
+    height: 150px;
+    width: 150px;
+  }
+  to {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.loading-bot {
+  width: 400px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  background-color: rgb(0, 0, 0, 0.3);
+  border-radius: 50%;
+  animation-name: expand;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.result {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+.result-text {
+  font-size: 50px;
+  font-weight: 700;
+  padding: 20px;
+}
+.play-again-btn {
+  background-color: white;
+  color: #07004f;
+  padding: 15px 60px 15px 60px;
+  border-radius: 5px;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.play-again-btn:hover {
+  color: red;
+  cursor: pointer;
+}
