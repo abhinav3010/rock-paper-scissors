@@ -6,7 +6,6 @@ import { setupRulesModal } from "./modal-setup";
 import paperIconUrl from "./images/icon-paper.svg";
 import scissorsIconUrl from "./images/icon-scissors.svg";
 import rockIconUrl from "./images/icon-rock.svg";
-
 setupRulesModal();
 
 const handsHtml = [

@@ -19,6 +19,7 @@ body {
   justify-content: space-between;
   color: white;
   width: 60%;
+  min-width: 400px;
   margin: auto;
   margin-top: 30px;
   font-weight: 700;
@@ -174,7 +175,10 @@ body {
 }
 
 .selection-screen {
-  margin-top: 100px;
+  position: absolute;
+  top: 67%;
+  margin-top: -300px;
+  width: 100%;
   display: none;
   color: white;
   font-weight: 600;
@@ -239,6 +243,7 @@ body {
   align-items: center;
   flex-direction: column;
   display: none;
+  text-align: center;
 }
 .result-text {
   font-size: 50px;
