@@ -64,7 +64,7 @@ const onHandPicked = (event) => {
     updateScore(score);
     gameElements.result.style.display = "flex";
     gameElements.resultText.innerHTML = gameResult[score];
-  }, 3000);
+  }, 2000);
 };
 
 const resetGame = () => {
