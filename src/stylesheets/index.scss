@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 100vh;
   background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
@@ -60,7 +65,7 @@ body {
   top: 67%;
   left: 50%;
   margin-top: -300px;
-  margin-left: -250px;
+  margin-left: -240px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -123,11 +128,13 @@ body {
   right: 5%;
   font-weight: 500;
   letter-spacing: 3px;
+  z-index: 5;
 }
 .rules:hover {
   cursor: pointer;
   background-color: white;
   color: #07004f;
+  z-index: 5;
 }
 
 .modal-container {
@@ -261,4 +268,42 @@ body {
 .play-again-btn:hover {
   color: red;
   cursor: pointer;
+}
+
+@media only screen and (max-height: 780px) {
+  .choice {
+    height: 150px;
+    width: 150px;
+  }
+
+  .picked {
+    height: 200px;
+    width: 200px;
+  }
+
+  .playground {
+    height: 350px;
+    width: 350px;
+    margin-top: -210px;
+    margin-left: -180px;
+    background-size: 200px 200px;
+  }
+  .selection-screen {
+    margin-top: -210px;
+  }
+  .medium {
+    height: 60px;
+    width: 40px;
+  }
+  .large {
+    height: 80px;
+    width: 60px;
+  }
+
+  .result {
+    height: 350px;
+  }
+  .selection {
+    height: 3500px;
+  }
 }
