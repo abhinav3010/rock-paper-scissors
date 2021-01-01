@@ -24,10 +24,9 @@ body {
   justify-content: space-between;
   color: white;
   width: 60%;
-  min-width: 400px;
+  min-width: 370px;
   margin: auto;
   margin-top: 30px;
-  font-weight: 700;
 }
 
 .game {
@@ -167,7 +166,7 @@ body {
   font-weight: 600;
   color: #07004f;
 }
-.rules-img {
+.rules-img-box {
   text-align: center;
   padding: 20px;
   margin-top: 10px;
@@ -184,6 +183,7 @@ body {
 .selection-screen {
   position: absolute;
   top: 67%;
+  left: 2.5%;
   margin-top: -300px;
   width: 95%;
   display: none;
@@ -198,7 +198,6 @@ body {
 }
 
 .selected {
-  padding: 30px;
   display: flex;
   margin-top: 80px;
   justify-content: center;
@@ -339,7 +338,7 @@ body {
   }
 
   .loading-bot {
-    width: 400px;
+    width: 200px;
     height: 200px;
     display: flex;
     justify-content: center;
@@ -441,5 +440,67 @@ body {
     padding: 10px 30px 10px 30px;
     font-size: 12px;
     letter-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .modal {
+    height: 300px;
+    width: 300px;
+    border-radius: 7px;
+    padding: 15px;
+  }
+
+  .rules-img-box {
+    text-align: center;
+    padding: 15px;
+    margin-top: 8px;
+  }
+  .rules-img {
+    height: 200px;
+    width: 200px;
+  }
+  .heading-text {
+    font-size: 25px;
+  }
+  .close-icon {
+    padding: 5px;
+  }
+
+  .header-box {
+    min-width: 320px;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .game {
+    font-size: 30px;
+  }
+  .score {
+    font-size: 30px;
+  }
+  .score-box {
+    padding: 10px 20px 5px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  .rules {
+    border: 1.5px solid white;
+    border-radius: 5px;
+    padding: 8px 20px 8px 20px;
+    font-size: 12px;
+    bottom: 3%;
+    letter-spacing: 2px;
+  }
+
+  .play-again-btn {
+    padding: 10px 20px 10px 20px;
+    border-radius: 4px;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  .result {
+    padding: 8px;
   }
 }
