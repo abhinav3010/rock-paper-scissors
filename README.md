@@ -1,4 +1,4 @@
-# rock-paper-scissors
+# Rock-Paper-Scissors
 
 This projects features a rock-paper-scissors game you can check it out on https://abhinav3010.github.io/rock-paper-scissors/
 
