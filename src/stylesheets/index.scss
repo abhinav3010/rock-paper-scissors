@@ -444,6 +444,83 @@ body {
 }
 
 @media only screen and (max-width: 400px) {
+  .blue-ring {
+    border: 13px solid #4862f7;
+    box-shadow: 0px 7px 3px #2344a6, inset 5px 7px 5px #9ea5ba;
+  }
+
+  .yellow-ring {
+    border: 13px solid #ffbd2b;
+    box-shadow: 0px 7px 3px #c78a04, inset 5px 7px 5px #9ea5ba;
+  }
+
+  .pink-ring {
+    border: 13px solid #fa3754;
+    box-shadow: 0px 7px 3px #ba1a32, inset 5px 7px 5px #9ea5ba;
+  }
+  .choice {
+    height: 110px;
+    width: 110px;
+  }
+
+  .picked {
+    height: 110px;
+    width: 110px;
+  }
+
+  .playground {
+    height: 260px;
+    width: 260px;
+    margin-top: -140px;
+    margin-left: -120px;
+    background-size: 130px 130px;
+  }
+
+  .selection-screen {
+    margin-top: -140px;
+  }
+
+  .medium {
+    height: 40px;
+    width: 30px;
+  }
+  .large {
+    height: 40px;
+    width: 30px;
+  }
+
+  .result {
+    height: 200px;
+  }
+
+  .selection {
+    font-size: 15px;
+    height: 200px;
+  }
+
+  .selected {
+    margin-top: 30px;
+  }
+
+  @keyframes expand {
+    from {
+      height: 60px;
+      width: 60px;
+    }
+    to {
+      height: 110px;
+      width: 110px;
+    }
+  }
+
+  .loading-bot {
+    height: 110px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .modal {
     height: 300px;
     width: 300px;
