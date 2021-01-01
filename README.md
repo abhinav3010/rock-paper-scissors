@@ -5,6 +5,6 @@ This projects features a rock-paper-scissors game you can check it out on https:
 Tech stack- HTML, CSS, JAVASCRIPT
 
 
-#Frontend-Mentor
+# Frontend-Mentor
 
 This is a part of frontend-mentor challenge you can find the challenge on https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH
